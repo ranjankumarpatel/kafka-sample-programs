@@ -29,7 +29,7 @@ public class Producer {
 		}
 
 		try {
-			for (long i = 0; i < 1000000; i++) {
+			for (long i = 0; i < 1000; i++) {
 				System.out.println(i);
 				// send lots of messages
 				producer.send(new ProducerRecord<String, String>("fast-messages",
